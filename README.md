@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# 📘 Contador de Cliques
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧩 Sobre o projeto
 
-Currently, two official plugins are available:
+O **Contador de clique** é uma aplicação interativa simples desenvolvida como parte do cronograma prático do curso DEVstart. O objetivo principal foi aplicar, de forma isolada e clara, os conceitos fundamentais de gerenciamento de estado e reatividade no ecossistema React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 Objetivo do projeto
 
-## React Compiler
+- Dominar o hook fundamental useState.
+- Compreender o ciclo de renderização do React disparado por eventos de clique.
+- Praticar a integração de lógica TypeScript em componentes funcionais.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- Core: React + TypeScript
+- Build Tool: Vite 
+- Estilização: CSS3 
+- Linter: ESLint 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📁 Estrutura de pastas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+📂 contador-de-cliques/
+├── 📂 public/
+├── 📂 src/
+│   ├── 📜 App.tsx
+│   ├── 📜 main.tsx
+│   ├── 📜 index.css
+│   └── 📜 App.css
+├── 📜 index.html
+├── 📜 package.json
+└── 📜 README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Como executar o projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone este repositório:
+   ```
+   git clone https://github.com/SeuUsuario/contador-de-cliques
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Instale as dependências:
+   ```
+   npm install
+   ```
+
+3. Execute o projeto em modo de desenvolvimento:
+   ```
+   npm run dev
+   ```
+
+4. Abra o navegador e acesse o endereço fornecido pelo Vite (geralmente http://localhost:5173).
+
+## 📋 Funcionalidades principais
+
+- ✅ Incremento e decremento de valor em tempo real.
+- ✅ Interface responsiva e centralizada.
+- ✅ Tipagem estrita para garantir a integridade do estado.
+
+## 🧠 Aprendizados
+
+- Gerenciamento de Estado: Implementação do useState para refletir mudanças na UI instantaneamente.
+
+- Event Handling: Captura e tratamento de eventos de usuário no React.
+
+- Tipagem Typescript: Tipagem de dados para tratamento de erros.
+
+
+## 👨‍💻 Autor
+
+Feito com 💙 por **Caio Lucas**
+
+
+🔗 [GitHub](https://github.com/caio-dev0)
+💼 [LinkedIn](https://www.linkedin.com/in/caio-dev0/)
